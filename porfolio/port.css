@@ -1,0 +1,627 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+}
+/* Nav-bar */
+.header{
+background-color: black;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 10%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 100;
+}
+.header .logo h2{
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    cursor: default;
+}
+.header .nav a{
+    display: inline-block;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+}
+.nav a:hover,
+.nav a.active{
+    color: skyblue;
+}
+/* home-page */
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10% 0;
+}
+.home .home-content .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid skyblue;
+    border-radius: 50%;
+    font-size: 20px;
+    color: skyblue;
+    text-decoration: none;
+    margin: 15px 15px 15px 0px;
+    transition: .5s ease;
+}
+.home .home-content .social-media a:hover{
+    background-color: skyblue;
+    color: black;
+    box-shadow: 0 0 20px skyblue;
+}
+.home img{
+    max-width: 400px;
+}
+.home .home-content{
+    max-width: 600px;
+}
+.home .home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+.home .home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.home .home-content p span{
+    color: skyblue;
+}
+.home .home-content button{
+    display: inline-flex;
+    padding: 12px 28px;
+    background-color: skyblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px skyblue;
+    border: none;
+    cursor: pointer;
+}
+.home .home-content button a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+
+}
+.home .home-content button:hover{
+    box-shadow: none;
+}
+.home .home-content h3 span{
+    color: skyblue;
+}
+/* about-page */
+.about-me{
+    height: 100vh;
+    width: 100%;
+    padding: 20px 10% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+    background-color: black;
+}
+.about-me .about-img img{
+    max-width: 400px;
+}
+.about-me .about-content{
+    text-align: start;
+}
+.about-content h2{
+    font-size: 40px;
+    font-weight: 700;
+    margin: -3px 0;
+}
+.about-content h3{
+    color: skyblue;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.about-content p span{
+    color: skyblue;
+}
+.about-content button{
+    display: inline-flex;
+    padding: 12px 28px;
+    background-color: skyblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px skyblue;
+    border: none;
+    cursor: pointer;
+}
+.about-content p{
+    margin-bottom: 20px;
+}
+.about-content button a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.about-content button:nth-of-type(1){
+    margin-right: 10px
+}
+.about-content button:hover{
+    box-shadow: none;
+}
+/* portfolio page */
+.portfolio{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:20px 10% 0 ;
+}
+.portfolio h2{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 50px auto;
+}
+.portfolio-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 100px;
+}
+.portfolio-container .portfolio-box{
+    flex: 1 1 1rem;
+    background-color: #1f242d;
+    border-radius: 30px;
+    text-align: center;
+}
+.portfolio-box p{
+    margin: 0 10px 0 10px;
+}
+.portfolio-box:hover{
+    box-shadow: 0 0 10px skyblue;
+}
+.portfolio-box i{
+    margin-top: 10px;
+    font-size: 3rem;
+    color: skyblue;
+}
+.portfolio-box h3{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+    letter-spacing: 0.5px;
+}
+.portfolio-box a i{
+    font-size: 25px;
+    text-decoration: none;
+    color: skyblue;
+    margin-bottom: 20px;
+}
+.portfolio-box button:hover{
+    box-shadow: none;
+}
+.myskills{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.myskills .skills{
+    height: 100%;
+    width: 500px;
+    padding-top: 150px;
+
+}
+.myskills li{
+    padding: 10px;
+    list-style-type: none;
+}
+.bar{
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(-25,.8,.25,1);
+}
+.myskills h1{
+    text-align: center;
+}
+.myskills h3{
+    color: skyblue;
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+}
+.html{
+    width: 80%;
+    animation: html 3s;
+}
+.css{
+    width: 60%;
+    animation: css 3s;
+}
+.javascript{
+    width: 50%;
+    animation: javascript 3s;
+}
+.reactjs{
+    width: 20%;
+    animation: reactjs 3s;
+}
+.bootstrap{
+    width: 30%;
+    animation: bootstrap 3s;
+}
+.skills-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.skills-arrow a:hover{
+    box-shadow: none;
+}
+.skills-arrow a{
+    padding: .3rem;
+    border-radius: .3rem;
+    background-color: skyblue;
+    align-items: center;
+    display: inline-flex;
+    text-decoration: none;
+    box-shadow: 0 0 10px skyblue;
+}
+.skills-arrow a i{
+    font-size: 30px;
+    color: black;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes reactjs{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 20%;
+    }
+}
+@keyframes bootstrap{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+.edu-page{
+    padding: 20px 10% 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.edu-page .education{
+width: 100%;
+padding: 35px 10%;
+}
+main.row{
+    display: block;
+
+}
+.col .title{
+    letter-spacing: 0.5px;
+    color: white;
+    padding: 0px 0px 20px 30px;
+}
+.edu-page .education .content{
+    padding: 0px 30px;
+    border-left:2px solid white ;
+}
+.edu-arrow{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edu-arrow a{
+    padding: .3rem;
+    border-radius: .3rem;
+    background-color: skyblue;
+    align-items: center;
+    display: inline-flex;
+    text-decoration: none;
+    box-shadow: 0 0 10px skyblue;
+}
+.edu-arrow a i{
+    color: black;
+    font-size: 30px;
+}
+.edu-arrow a:hover{
+    box-shadow: none;
+}
+.edu-page .education .content .box1{
+position: relative;
+padding: 20px;
+border-radius: 30px;
+border: 1px solid white;
+background-color: #1f242d;
+cursor: pointer;
+transition: all 0.4s;
+margin-bottom: 20px;
+}
+.edu-page .education .content .box2{
+    position: relative;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: #1f242d;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}    
+.edu-page .education .content .box h3{
+    color: skyblue;
+}
+.edu-page .education .content .box1::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right:calc(100% + 22px);
+    top: -1px;
+    background-color: white;
+    border: 2px solid white;
+}
+.edu-page .education .content .box2::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right:calc(100% + 22px);
+    top: -1px;
+    background-color: white;
+    border: 2px solid white;
+}
+.feedback{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feedback .feed-back{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.feedback .feed-back h2{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 30px 0;
+}
+.feedback .feed-back .rating{
+    letter-spacing: 10px;
+    margin: 10px 0;
+}
+.feedback .feed-back .rating i{
+    font-size: 25px;
+    color: #363b44;
+    cursor: pointer;
+}
+.feedback .feed-back form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+.feedback .feed-back form textarea{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #1f242d;
+    color: skyblue;
+    resize: none;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.feedback .feed-back form textarea:hover{
+    box-shadow: 0 0 10px skyblue ;
+}
+.feedback .feed-back form textarea::placeholder{
+    color: rgb(172, 168, 168);
+    letter-spacing: 0.3px;
+}
+.feedback .feed-back form button{
+    margin: 30px 0;
+    display: inline-flex;
+    padding: 12px 28px;
+    background-color: skyblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px skyblue;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+}
+.feedback .feed-back form button:hover{
+    box-shadow: none;
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact h2{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+.contact .c-me{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact form{
+    height: 450px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact form input{
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: #1f242d;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 10px;
+    text-align: center;
+    color: skyblue;
+}
+.contact form input::placeholder{
+    color: rgb(172, 168, 168);
+    text-align: start;
+}
+.contact form textarea{
+    margin: 8px auto;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: #1f242d;
+    border-radius: 10px;
+    color: skyblue;
+    text-align: start;
+    padding: 15px 20px;
+    letter-spacing: 0.5px;
+}
+.contact form textarea::placeholder{
+    color: rgb(172, 168, 168);
+}
+.contact form button{
+    display: inline-flex;
+    padding: 12px 28px;
+    background-color: skyblue;
+    border-radius: 40px;
+    box-shadow: 0 0 10px skyblue;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.contact form button:hover{
+    box-shadow: none;
+}
+.contact form input:hover{
+    box-shadow: 0 0 10px skyblue;
+}
+.contact form textarea:hover{
+    box-shadow: 0 0 10px skyblue;
+}
+.footer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.foot-page{
+    height: 100%;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.footer-text p span{
+    color: skyblue;
+}
+.footer-icon-top a{
+    padding: .3rem;
+    border-radius: .3rem;
+    background-color: skyblue;
+    align-items: center;
+    display: inline-flex;
+    text-decoration: none;
+    box-shadow: 0 0 10px skyblue;
+}
+.footer-icon-top i{
+    font-size: 30px;
+    color: black;
+}
+.footer-icon-top a:hover{
+    box-shadow: none;
+}
